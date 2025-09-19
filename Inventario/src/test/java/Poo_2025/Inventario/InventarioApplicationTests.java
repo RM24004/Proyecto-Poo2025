@@ -1,0 +1,13 @@
+package Poo_2025.Inventario;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class InventarioApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
