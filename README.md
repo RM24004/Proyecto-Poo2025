@@ -55,21 +55,21 @@ src/
 ```
 
 📈 Funcionalidades
-CRUD de productos y proveedores.
-Registro de movimientos con validación de stock.
-Filtrado por tipo de movimiento.
-Historial de operaciones por producto/proveedor.
-Reportes básicos de inventario.
+- CRUD de productos y proveedores.
+- Registro de movimientos con validación de stock.
+- Filtrado por tipo de movimiento.
+- Historial de operaciones por producto/proveedor.
+- Reportes básicos de inventario.
 
 🧪 Pruebas
 Las pruebas se realizan utilizando Postman, permitiendo validar los endpoints REST de forma manual.
 Se incluyen colecciones para:
-Crear, consultar, actualizar y eliminar productos y proveedores.
-Registrar movimientos de inventario (entradas, salidas, ajustes).
-Filtrar movimientos por tipo, fecha o producto.
-Verificar respuestas del backend y códigos de estado HTTP.
-Puedes importar la colección de Postman desde el archivo inventario.postman_collection.json incluido en el repositorio.
+- Crear, consultar, actualizar y eliminar productos y proveedores.
+- Registrar movimientos de inventario (entradas, salidas, ajustes).
+- Filtrar movimientos por tipo, fecha o producto.
+- Verificar respuestas del backend y códigos de estado HTTP.
+- Puedes importar la colección de Postman desde el archivo inventario.postman_collection.json incluido en el repositorio.
 
 📌 Mejoras futuras
-API REST para integración con otros sistemas.
-Dashboard con estadísticas gráficas.
+- API REST para integración con otros sistemas.
+- Dashboard con gráficas.
