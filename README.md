@@ -21,7 +21,8 @@ Este proyecto es una aplicación desarrollada en **Java** con **Spring Boot**, d
 | Base de datos        | MySQL              |
 | ORM                  | Spring Data JPA    |
 | Build Tool           | Maven              |
-| Control de versiones | Git                |
+| Control de versiones | Github                |
+| Reduccion codigo     | Lombok             |
 
 ## 🚀 Cómo ejecutar el proyecto
 
@@ -35,8 +36,8 @@ Crea una base de datos llamada **inventario_db**.
 Actualiza las credenciales en `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/inventario_db
-spring.datasource.username=RM24004
+spring.datasource.url=jdbc:mysql://localhost:3306/inventario
+spring.datasource.username=root
 spring.datasource.password=admin
 ```
 ```
