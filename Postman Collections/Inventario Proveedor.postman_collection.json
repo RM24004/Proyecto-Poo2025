@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "798f2bc8-b326-4316-bb94-2390b7155680",
+		"name": "Inventario Proveedor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48576506",
+		"_collection_link": "https://rm24004-65f6d7fa-892378.postman.co/workspace/Victor-Alberto-Rodriguez-Monter~55534024-dad0-42da-8c0c-559ed24e3852/collection/48576506-798f2bc8-b326-4316-bb94-2390b7155680?action=share&source=collection_link&creator=48576506"
+	},
+	"item": [
+		{
+			"name": "Listar Proveedores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/proveedores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"proveedores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Proveedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"alexander\",\r\n  \"email\": \"nuevo@ues.com22\",\r\n  \"telefono\": \"87654321\",\r\n  \"direccion\": \"calle falsa dirección 456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/proveedores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"proveedores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/proveedores/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"proveedores",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Provedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"prado\",\r\n  \"email\": \"nuevo@mailcom\",\r\n  \"telefono\": \"87654321\",\r\n  \"direccion\": \"casa negra 1234 pasaja blanco\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/proveedores/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"proveedores",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Proveedor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/proveedores/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"proveedores",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

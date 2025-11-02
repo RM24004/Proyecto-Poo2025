@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "5d4f09cd-a62b-4dc0-a4c3-129648013b16",
+		"name": "Inventario Tipo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48576506",
+		"_collection_link": "https://rm24004-65f6d7fa-892378.postman.co/workspace/Victor-Alberto-Rodriguez-Monter~55534024-dad0-42da-8c0c-559ed24e3852/collection/48576506-5d4f09cd-a62b-4dc0-a4c3-129648013b16?action=share&source=collection_link&creator=48576506"
+	},
+	"item": [
+		{
+			"name": "Listar Tipos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/tipos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"tipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Tipos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"prueba99\",\r\n  \"descripcion\": \"prueba99\",\r\n  \"efectoStock\": \"Entrada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/tipos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"tipos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/tipos/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"tipos",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Por Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Pruebas100\",\r\n  \"descripcion\": \"estas son pruebas\",\r\n  \"efectoStock\": \"Salida\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/tipos/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"tipos",
+						"46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/tipos/45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"tipos",
+						"45"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

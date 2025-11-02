@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "240acf35-2e59-4fb4-92b0-45bd80f74264",
+		"name": "Inventario Producto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48576506",
+		"_collection_link": "https://rm24004-65f6d7fa-892378.postman.co/workspace/Victor-Alberto-Rodriguez-Monter~55534024-dad0-42da-8c0c-559ed24e3852/collection/48576506-240acf35-2e59-4fb4-92b0-45bd80f74264?action=share&source=collection_link&creator=48576506"
+	},
+	"item": [
+		{
+			"name": "Listar Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Playstation 1\",\r\n  \"descripcion\": \"Consola de cd\",\r\n  \"precioUnitario\": 75.99,\r\n  \"stockActual\": 15,\r\n  \"idProveedor\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Playstation 3\",\r\n  \"descripcion\": \"Consola retro en excelente estado\",\r\n  \"precioUnitario\": 90.0,\r\n  \"stockActual\": 8,\r\n  \"idProveedor\": 8\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Precio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/inventario/productos/buscar/precio?precio=15.99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"inventario",
+						"productos",
+						"buscar",
+						"precio"
+					],
+					"query": [
+						{
+							"key": "precio",
+							"value": "15.99"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
